@@ -16,38 +16,12 @@ This repository contains the source code for my personal portfolio website. It's
 - CSS3
 - JavaScript (ES6+)
 
-## Project Structure
-
-```
-portfolio-website/
-│
-├── index.html
-├── style.css
-├── script.js
-├── mediaqueries.css
-│
-└── assets/
-    ├── daniel.jpg
-    ├── daniel2.jpg
-    ├── project-1.png
-    ├── project-2.png
-    ├── project-3.png
-    ├── arrow.png
-    ├── checkmark.png
-    ├── education.png
-    ├── email.png
-    ├── experience.png
-    ├── github.png
-    ├── linkedin.png
-    ├── moon.png
-    └── sun.png
-```
 
 ## Setup and Usage
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Jdaniel98/Portfolio-Website.git
+   git clone https://github.com/minnie-star/Portfolio-Website.git
    ```
 
 2. Navigate to the project directory:
@@ -81,14 +55,3 @@ This is a personal portfolio project, but if you have suggestions for improvemen
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Contact
-
-Daniel Owusu Mensah - [kwameowusu421@gmail.com](mailto:kwameowusu421@gmail.com)
-
-Project Link: [https://github.com/yourusername/portfolio-website](https://github.com/yourusername/portfolio-website)
-
----
-
-Feel free to star ⭐ this repository if you find it helpful!
- 
