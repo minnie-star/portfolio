@@ -1,100 +1,361 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Minenhle Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Minenhle Hlongwane</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <button id="darkModeToggle" onclick="toggleDarkMode()">
+        <img src="assets/moon.png" alt="Dark Mode" class="icon" id="darkModeIcon">
+      </button>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Minenhle Hlongwane</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+      <button id="darkModeToggle" onclick="toggleDarkMode()">
+        <img src="assets/moon.png" alt="Dark Mode" class="icon" id="darkModeIcon">
+      </button>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/IMG_3016.PNG" alt="Minenhle Hlongwane profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Minenhle Hlongwane</h1>
+        <p class="section__text__p2">Web and Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/cv2025.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/minenhle-hlongwane-a3a164336/'"
+          />
+          <img
+            src="assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/minnie-star'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/black.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>10 months <br />Web and Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Current Bachelors of Science<br />Software Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an aspiring Junior Web and Computer Developer, I have successfully built and deployed websites and software applications,
+              showcasing a strong foundation in both front-end and back-end development. Through my certification, I have gained proficiency
+              in key technologies such as HTML, CSS, and frameworks like React, alongside programming languages such as Python, C# and JavaScript. My experience 
+              includes debugging, optimizing, and maintaining code to ensure functionality and efficiency.    
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OOP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Version Control</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
 
-		<!-- Wrapper-->
-			<div id="wrapper">
-
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Minenhle</h1>
-									<p>Web and Software Developer</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/profile.jpg" alt="" />
-								</a>
-							</article>
-
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>About Me</h2>
-								</header>
-								<p>
-									Hi! I build beautiful, functional Web solutions. I am passionate about coding and solving problems.
-									Let's connect feel free to reach out via email and Whatsapp. I would love to hear from you and build your dream website.  
-								</p>
-								<p> Email: primeweb@minnie.pro | Whatsapp: +27 84 591 6081</p>
-								<p>Click the button below to view my work</p>
-								<a href="https://minnie-star.github.io/portfolio/web-demo/index.html" class="button">Click Here</a>
-								
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="mailto:primeweb@minnie.pro" method="POST" enctype="text/plain">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; 2025 Portfolio</li><li> <p> created by Minenhle </p></li>
-						</ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                <div>
+                  <h3>Data Structures & Algorithms</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section>
+    <div class="flex">
+    <!--<h1>Badges</h1>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="84352d0a-3c59-4b66-a1d6-0efaf97361ac" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+  </section>-->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/image2.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Glucometer Tracker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/minnie-star/glucometer'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/minnie-star/glucometer'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/image0.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Exercise Tracker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/minnie-star/exerciseTracker/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/minnie-star/exerciseTracker/tree/main'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com"></a></p>minenhleminnie8@icloud.com
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/minenhle-hlongwane-a3a164336/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Minenhle Hlongwane. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
